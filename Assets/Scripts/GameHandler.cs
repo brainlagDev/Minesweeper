@@ -22,6 +22,8 @@ public class GameHandler : MonoBehaviour
     }
     private void Start()
     {
+        Camera camera = Camera.main;
+        camera.transform.position = new Vector3((float)width / 2, (float )height / 2, -10);
         StartNewGame();
     }
 
